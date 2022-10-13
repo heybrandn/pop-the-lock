@@ -24,7 +24,7 @@ oled.text("the", 0, 10)
 oled.text("Lock", 0, 20)
 oled.text("by", 72, 44)
 oled.text("brandon", 72, 54)
-oled.text("V3.3", 0, 54)
+oled.text("v3.3", 0, 54)
 oled.show()
 time.sleep(2)
 x = 0
@@ -70,7 +70,7 @@ def xNoA():
     oled.text("Lock", 0, 20)
     oled.text("by", 72, 44)
     oled.text("brandon", 72, 54)
-    oled.text("V3.3", 0, 54)
+    oled.text("v3.3", 0, 54)
     oled.show()
     time.sleep(2)
     score = 0
@@ -80,7 +80,7 @@ def win():
     oled.fill(0)
     oled.text("You Win", 36, 22)
     oled.text("Score", 44, 42)
-    oled.text(str(score), 60, 52)
+    oled.text(str(score), 56, 52)
     oled.show()
     time.sleep(5)
     oled.fill(0)
@@ -89,7 +89,7 @@ def win():
     oled.text("Lock", 0, 20)
     oled.text("by", 72, 44)
     oled.text("brandon", 72, 54)
-    oled.text("V3.3", 0, 54)
+    oled.text("v3.3", 0, 54)
     oled.show()
     time.sleep(2)
     score = 0
@@ -122,7 +122,6 @@ while True:
         if score >= 10:
             win()
         if button.value():
-            print("test")
             if x == 0:
                 if x == a:
                     oled.blit(framebuf.FrameBuffer(BaseFrame, 128, 64, framebuf.MONO_HLSB), 0, 0)
